@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 16:41:25 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/20 21:04:03 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 14:46:33 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,10 @@ int	ft_atoi(const char *str)
 	finalint = 0;
 	while (str2[i] >= '0' && str2[i] <= '9')
 		finalint = finalint * 10 + (str2[i++] - '0');
-	return (finalint * sign);
+	finalint *= sign;
+	if (sign > 0 && finalint < 0)
+		return (-1);
+	if (sign < 0 && finalint > 0)
+		return (0);
+	return (finalint);
 }
