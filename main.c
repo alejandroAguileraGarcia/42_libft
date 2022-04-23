@@ -6,11 +6,12 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:49:32 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 11:38:13 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 14:15:52 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>

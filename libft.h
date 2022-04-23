@@ -6,16 +6,15 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:41:19 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 16:22:03 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 14:16:15 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 
-# define LIBFT_H
+#include <stddef.h>
 
-#include <unistd.h>
-#include <stdlib.h>
+# define LIBFT_H
 
 int		ft_isalpha (int c);
 int		ft_isdigit (int c);

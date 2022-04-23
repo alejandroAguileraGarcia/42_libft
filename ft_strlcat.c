@@ -6,11 +6,11 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 17:25:10 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/20 19:35:49 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 14:12:40 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {

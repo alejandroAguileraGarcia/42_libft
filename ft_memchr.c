@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaguiler <aaguiler@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 20:07:46 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/22 17:52:57 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 14:08:42 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "stddef.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
