@@ -6,11 +6,12 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 12:40:03 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 14:17:27 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 16:37:22 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	n_cifras(long n)
 {
@@ -18,7 +19,10 @@ int	n_cifras(long n)
 
 	i = 0;
 	if (n < 0)
+	{
+		n *= -1;
 		i++;
+	}
 	while (n > 0)
 	{
 		n /= 10;
@@ -34,6 +38,14 @@ char	*ft_itoa(int n)
 	int		neg;
 	long	n2;
 
+	if (n == 0)
+	{
+		str = ft_calloc (2, sizeof(char));
+		if (!str)
+			return (0);
+		str[0] = '0';
+		return (str);
+	}
 	n2 = (long)n;
 	neg = 0;
 	n_cif = n_cifras(n2);
@@ -45,11 +57,12 @@ char	*ft_itoa(int n)
 	str = ft_calloc (n_cif + 1, sizeof(char));
 	if (!str)
 		return (0);
-	str[n_cif--] = '\0';
+	n_cif--;
 	while (n_cif >= 0)
 	{
-		str[n_cif--] = n2 % 10 + '0';
+		str[n_cif] = n2 % 10 + '0';
 		n2 /= 10;
+		n_cif--;
 	}
 	if (neg)
 		str[0] = '-';

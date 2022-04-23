@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:49:32 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 14:15:52 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 16:34:57 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -206,7 +206,7 @@ int main(void)
 	
 	puts("ft_itoa");
 
-	printf("	Ft: %s \n", ft_itoa(1234));
+	printf("	Ft: %s \n", ft_itoa(0));
 	
 	puts("------------------");
 }
