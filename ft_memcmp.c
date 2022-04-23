@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 16:09:31 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 08:52:58 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 11:34:38 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	s11 = (unsigned char *)s1;
 	s12 = (unsigned char *)s2;
-	while (s11[i] && s12[i] && (s11[i] == s12[i]) && i < n)
+	while (s11[i] == s12[i] && i < n)
 		i++;
 	return (s11[i] - s12[i]);
 }

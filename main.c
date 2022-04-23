@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:49:32 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/22 17:33:06 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 11:38:13 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -187,7 +187,7 @@ int main(void)
 	
 	puts("ft_substr");
 
-	printf("	FT_: %s\n", ft_substr("hola me llamo carlos", 55, 25));
+	printf("	FT_: %s\n", ft_substr("hola me llamo carlos", 55, 2));
 
 	puts("------------------");
 	

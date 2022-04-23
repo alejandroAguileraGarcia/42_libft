@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 12:40:03 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 16:08:57 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 11:45:06 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_itoa(int n)
 		n2 *= -1;
 		neg = 1;
 	}
-	str = malloc (n_cif + 1);
+	str = calloc (n_cif + 1, sizeof(char));
 	if (!str)
 		return (0);
 	str[n_cif--] = '\0';
