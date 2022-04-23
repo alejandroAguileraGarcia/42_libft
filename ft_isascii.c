@@ -6,13 +6,13 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:13:58 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/19 18:14:32 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:36:06 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 177)
+	if (c >= 0 && c <= 127)
 		return (1);
 	return (0);
 }

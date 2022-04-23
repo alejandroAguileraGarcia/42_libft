@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 08:42:56 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 08:48:20 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/22 18:31:06 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,14 @@ char	*ft_strdup(const char *s1)
 	char	*dest;
 	int		i;
 
-	dest = malloc(sizeof(s1));
+	dest = ft_calloc(ft_strlen(s1) + 1, sizeof(char));
 	if (!dest)
-		return (NULL);
+		return (0);
 	i = 0;
 	while (s1[i])
 	{
 		dest[i] = s1[i];
 		i++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }

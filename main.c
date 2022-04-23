@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:49:32 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 15:33:07 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:33:06 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,11 +60,11 @@ int main(void)
 	char	strm[50] = "h";
 	char	strm2[50] = "h";
 
-	char	strn[50] = "hola";
-	char	strn2[50] = "hola";
+	//char	strn[50] = "hola";
+	//char	strn2[50] = "0;
 	
-	printf("	Orig: %s", memcpy (strm, strn, 3));
-	printf("	Ft: %s\n", ft_memcpy (strm2, strn2, 3));
+	printf("	Orig: %s", memcpy (0, 0, 3));
+	printf("	Ft: %s\n", ft_memcpy (0, 0, 3));
 
 	printf("	Original: %s\n	Ft: %s\n", strm, strm2);
 	printf("----------------\n");

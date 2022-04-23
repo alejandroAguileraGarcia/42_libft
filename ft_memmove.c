@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 15:54:20 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/20 16:21:00 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/22 17:44:41 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
-
+	
+	if (!dst && !src && len)
+		return (0);
 	i = 0;
 	while (i < len)
 	{

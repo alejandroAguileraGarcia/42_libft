@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 15:47:00 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 15:52:04 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/22 16:58:15 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i])
-		write(fd, s[i++], 1);
+		write(fd, &s[i++], 1);
 }
