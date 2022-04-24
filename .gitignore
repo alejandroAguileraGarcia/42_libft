@@ -1,4 +1,6 @@
+libftTester
 .DS_Store
 *.o
 *.a
+main.c
 a.out

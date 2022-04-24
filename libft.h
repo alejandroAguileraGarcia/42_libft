@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:41:19 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 14:16:15 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/23 19:40:19 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, char (*f)(unsigned int, char));
+char	**ft_split(char const *s, char c);
 
 #endif

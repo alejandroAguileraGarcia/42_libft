@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 18:49:32 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 16:34:57 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/24 13:51:49 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -209,4 +209,8 @@ int main(void)
 	printf("	Ft: %s \n", ft_itoa(0));
 	
 	puts("------------------");
+	
+	puts ("split");
+
+
 }

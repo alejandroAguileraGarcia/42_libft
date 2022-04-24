@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 18:14:24 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/21 16:07:50 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/24 17:14:34 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	i = ft_strlen(s);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *)&s[i]);
 		i--;
 	}
