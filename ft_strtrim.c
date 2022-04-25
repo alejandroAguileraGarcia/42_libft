@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 10:37:15 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 17:31:28 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/25 11:45:45 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		s2 = ft_calloc(2, sizeof(char));
 		if (!s2)
 			return (0);
-		s2 = "";
 		return (s2);
 	}
 	len = ft_strlen(s1) - (i + ft_get_last(s1, set));

@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 09:13:30 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 14:44:30 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/04/25 11:09:30 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			return (0);
 		return (sbstr);
 	}
+	if (ft_strlen(s) - start < len)
+		len = ft_strlen(s) - start;
 	sbstr = ft_calloc(len + 1, sizeof(char));
 	if (!sbstr)
 		return (0);
