@@ -22,8 +22,7 @@ RM		= rm -f
 
 all: $(NAME)
 
-$(NAME):	
-		${CC} -c ${CFLAGS} ${SRCS} 
+$(NAME):	$(OBJS)
 		ar crs ${NAME} ${OBJS}
 		
 clean:
@@ -37,4 +36,4 @@ re:			fclean all
 bonus:		${OBJS} ${BONUS_OBJS}
 			ar crs ${NAME} ${OBJS} ${BONUS_OBJS}
 
-.PHONY: all, clean, fclean, re
+.PHONY: all, clean, fclean, re, bonus

@@ -6,7 +6,7 @@
 /*   By: aaguiler <aaguiler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 12:40:03 by aaguiler          #+#    #+#             */
-/*   Updated: 2022/04/23 18:48:23 by aaguiler         ###   ########.fr       */
+/*   Updated: 2022/05/10 18:13:49 by aaguiler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char	*ft_itoa(int n)
 
 	if (n == 0)
 	{
-		str = ft_calloc (2, sizeof(char));
+		str = ft_calloc(2, sizeof(char));
 		if (!str)
 			return (0);
 		str[0] = '0';
@@ -72,7 +72,7 @@ char	*ft_itoa(int n)
 	neg = 0;
 	n_cif = n_cifras(n2);
 	ft_negative(&n2, &neg);
-	str = ft_calloc (n_cif + 1, sizeof(char));
+	str = ft_calloc(n_cif + 1, sizeof(char));
 	if (!str)
 		return (0);
 	ft_fill_array(n_cif, n2, str, neg);
